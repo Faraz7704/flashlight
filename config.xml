@@ -18,6 +18,7 @@
     </author>
     
     <preference name="fullscreen"                 value="true" />
+    <preference name="orientation"                value="portrait" />
 
     <!-- We'll include the Flashlight plugin -->
     <gap:plugin name="nl.x-services.plugins.flashlight" version="1.4.1" />
