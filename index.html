@@ -5,10 +5,10 @@
 <style type="text/css">
 
 body	{
-			//background-color: #000000;
+			background-color: black;
 			position: absolute;
-				top: 150px;
-				right: 100px;
+				top:220px;
+				right: 95px;
 		}
 		
 #button {	
@@ -44,7 +44,7 @@ function on(){
 	window.plugins.flashlight.available(function(isAvailable) {
   if (isAvailable) {
 
-  	window.plugins.flashlight.toggle();
+  	window.plugins.flashlight.toggle(true);
 
   } else {
     alert("Flashlight not available on this device");
