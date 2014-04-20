@@ -7,8 +7,8 @@
 body	{
 			//background-color: #000000;
 			position: absolute;
-				top: 50%;
-				right: 50%;
+				top: 150px;
+				right: 100px;
 		}
 		
 #button {	
@@ -43,13 +43,7 @@ function on(){
 	window.plugins.flashlight.available(function(isAvailable) {
   if (isAvailable) {
 
-    // switch on
-    window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
-
-    // switch off
-    setTimeout(function() {
-      window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-    }, 3000000000000000);
+  	window.plugins.flashlight.toggle();
 
   } else {
     alert("Flashlight not available on this device");
@@ -73,8 +67,8 @@ function exitApp() {
 </head>
 <body>
 <div>
-<!--<button id="button" type="button" onclick="on()">Flashlight ON</button><br><br>
-<button id="button1" type="button" onclick="off()">Flashlight OFF</button> -->
+<button id="button" type="button" onclick="on()">Flashlight ON</button><br><br>
+<!--<button id="button1" type="button" onclick="off()">Flashlight OFF</button> -->
 </div>
 </body>
 </html>
