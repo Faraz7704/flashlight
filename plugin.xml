@@ -16,7 +16,7 @@
     <engine name="cordova" version=">=3.0.0"/>
   </engines>
 
-  <asset src="www/Flashlight.js" target="js/plugins/Flashlight.js"/>
+  <asset src="Flashlight.js" target="js/plugins/Flashlight.js"/>
 
   <!-- ios -->
   <platform name="ios">
@@ -34,7 +34,7 @@
   <!-- android -->
   <platform name="android">
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="config.xml" parent="/*">
       <feature name="Flashlight">
         <param name="android-package" value="nl.xservices.plugins.Flashlight" />
       </feature>
@@ -44,7 +44,7 @@
       <uses-permission android:name="android.permission.CAMERA"/>
     </config-file>
 
-    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="Flashlight.java" target-dir="src/nl/xservices/plugins"/>
   </platform>
 
 </plugin>
